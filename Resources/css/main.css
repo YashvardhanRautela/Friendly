@@ -1,0 +1,66 @@
+body {
+    background-color: #E9EBEE;
+}
+#my-nav {
+    background-color: #4267b2;
+    color: white;
+    margin-bottom: 10px;
+}
+#brand{
+    color: white;
+}
+#my-nav a{
+    color: white !important;
+}
+.added-width{
+    min-width: 400px;
+}
+#dark-color span{
+    color: #0d1325;
+    font-size: 20px;
+}
+.list-heading {
+    padding: 20px 15px 0 15px;
+}
+section {
+    padding: 0 !important;
+}
+.wrapper section{
+    height: 800px;
+}
+.txt-clr > li > a{
+    color: black;
+}
+.panel-body .glyphicon {
+    margin-left: 10px;
+    margin-right: 4px;
+}
+.panel {
+    margin-bottom: 8px;
+}
+.text-post {
+    margin-bottom: 15px;
+    margin-top: 0;
+}
+.img-post{
+    margin-bottom: 15px;
+}
+.comments-toolkit{
+    margin-top: 5px;
+}
+.comments-toolkit span{
+    margin-left: 5px;
+}
+/*.post-section, .ads{*/
+    /*height: 800px;*/
+    /*background-color: white;*/
+/*}*/
+.post-section{
+    margin-right: 10px;
+    margin-left: 10px;
+}
+footer{
+    height: 42px;
+    background-color: ;
+    margin-top: 10px;
+}
