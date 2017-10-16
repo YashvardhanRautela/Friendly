@@ -2,7 +2,12 @@
 <html lang="en">
 <head>
     <title>FB</title>
-    <link rel="stylesheet" href="Resources/Vendor/css/bootstrap.css">
+    <link rel="stylesheet" href="Resources/Vendor/css/bootstrap.min.css">
+    <script
+      src="http://code.jquery.com/jquery-3.2.1.js"
+      integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+  crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="Resources/Vendor/js/bootstrap.min.js">
     <link rel="stylesheet" href="Resources/CSS/main.css">
 </head>
 <body>
@@ -41,7 +46,7 @@
 </nav>
 <div class="container">
     <article class="row wrappr">
-        <section class="col-md-2 hidden-xs"><div>
+        <section class="col-md-2 hidden-xs hidden-sm"><div>
             <ul class="nav nav-pills nav-stacked txt-clr">
                 <li role="presentation"><a href="#">Yashvardhan Rautela</a></li>
                 <li role="presentation"><a href="#"><span class="glyphicon glyphicon-list-alt"></span> News Feed</a></li>
@@ -102,12 +107,19 @@
                                 <span><a href="#">Reply </a></span>
                                 <span class="text-muted">20 mins</span>
                             </div>
-                            <div>
-                                <input type="text" placeholder="Add a comment...">
-                            </div>
                         </div>
                     </div>
+                    <div class="media">
+                        <div class="media-left media-middle">
+                            <a href="#">
+                                <img class="media-object img-circle" src="http://via.placeholder.com/32x32" alt="img">
+                            </a>
+                        </div>
+                        <div class="media-body">
+                            <input type="text" class="comment-box" placeholder="Write a comment...">
+                        </div>
                     </div>
+                  </div>
             </div>
             <div class="panel panel-default">
                 <div class="panel-heading">
@@ -157,7 +169,27 @@
                 <div class="panel-footer">Panel footer</div>
             </div>
         </div></section>
-        <section class="col-md-3"><div class="ads"></div></section>
+        <section class="col-md-3">
+          <div class="ads">
+          <div>
+
+            <!-- Nav tabs -->
+            <ul class="nav nav-tabs" role="tablist">
+                <li role="presentation" class="active"><a href="#top" aria-controls="home" role="tab" data-toggle="tab">Top Trends</a></li>
+                <li role="presentation"><a href="#politics" aria-controls="profile" role="tab" data-toggle="tab">Politics</a></li>
+                <li role="presentation"><a href="#sports" aria-controls="messages" role="tab" data-toggle="tab">Sports</a></li>
+            </ul>
+
+            <!-- Tab panes -->
+            <div class="tab-content">
+              <div role="tabpanel" class="tab-pane active" id="top">...</div>
+              <div role="tabpanel" class="tab-pane" id="politics">...</div>
+              <div role="tabpanel" class="tab-pane" id="sports">...</div>
+            </div>
+
+          </div>
+          </div>
+        </section>
     </article>
     <footer class="row">
         <ul class="nav nav-pills pull-right">

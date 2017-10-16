@@ -51,6 +51,18 @@ section {
 .comments-toolkit span{
     margin-left: 5px;
 }
+.comment-box{
+  width: 100%;
+  border-radius: 10px;
+  height: 32px;
+  color: grey;
+  border: 0 !important;
+}
+.comment-box:focus{
+  border: none !important;
+  box-shadow: none !important;
+  outline: none;
+}
 /*.post-section, .ads{*/
     /*height: 800px;*/
     /*background-color: white;*/
