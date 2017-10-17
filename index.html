@@ -2,11 +2,14 @@
 <html lang="en">
 <head>
     <title>FB</title>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="Resources/Vendor/Font Awesome/css/font-awesome.css">
     <link rel="stylesheet" href="Resources/Vendor/css/bootstrap.min.css">
-    <script
-      src="http://code.jquery.com/jquery-3.2.1.js"
-      integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
-  crossorigin="anonymous"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="Resources/Vendor/js/bootstrap.min.js">
     <link rel="stylesheet" href="Resources/CSS/main.css">
 </head>
@@ -21,7 +24,8 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#" id="brand">FB</a>
+            <a class="navbar-brand icons" href="#">
+              <i class="fa fa-facebook-official icon-fb" aria-hidden="true"></i>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
@@ -34,9 +38,10 @@
                 <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button>
             </form>
             <ul class="nav navbar-nav navbar-right" id="dark-color">
-                <li><a href="#">Bhartendu</a></li>
-                <li><a href="#">Home</a></li>
-                <li><a href="#"><span class="glyphicon glyphicon-user"></span></a></li>
+                <li><img src="https://scontent.fdel1-1.fna.fbcdn.net/v/t1.0-1/p160x160/17554486_1774548832579165_8945212521538377043_n.jpg?oh=95537bcae6f6e3bcf1c19228dacc033d&oe=5A3BAB21" class="dp"></li>
+                <li><a href="#"><b>Yashvardhan</b></a></li>
+                <li><a href="#"><b>Home</b></a></li>
+                <li><a href="#"><span class="notify-badge">2</span><span class="glyphicon glyphicon-user" id="gi-user"></span></a></li>
                 <li><a href="#"><span class="glyphicon glyphicon-envelope"></span></a></li>
                 <li><a href="#"><span class="glyphicon glyphicon-globe"></span></a></li>
                 <li><a href="#"><span class="glyphicon glyphicon-question-sign"></span></a></li>
@@ -48,23 +53,24 @@
     <article class="row wrappr">
         <section class="col-md-2 hidden-xs hidden-sm"><div>
             <ul class="nav nav-pills nav-stacked txt-clr">
-                <li role="presentation"><a href="#">Yashvardhan Rautela</a></li>
-                <li role="presentation"><a href="#"><span class="glyphicon glyphicon-list-alt"></span> News Feed</a></li>
-                <li role="presentation"><a href="#"><span class="glyphicon glyphicon-envelope"></span> Messenger<span class="badge">42</span></a></li>
+                <li role="presentation"><a href="#"><span><img src="https://scontent.fdel1-1.fna.fbcdn.net/v/t1.0-1/p160x160/17554486_1774548832579165_8945212521538377043_n.jpg?oh=95537bcae6f6e3bcf1c19228dacc033d&oe=5A3BAB21" class="dp"></span>Yashvardhan Rautela</a></li>
+                <li role="presentation"><a href="#"><span class="glyphicon glyphicon-list-alt"></span> News Feed<span class="badge pull-right badge-l">99</span></a></li>
+                <li role="presentation"><a href="#"><span class="glyphicon glyphicon-envelope"></span> Messenger<span class="badge pull-right badge-l">42</span></a></li>
                 <p class="list-heading list-heading">Shortcuts</p>
-                <li role="presentation"><a href="#">GEU</a></li>
-                <li role="presentation"><a href="#">Acadview</a></li>
+                <li role="presentation"><a href="#"><span class="glyphicon glyphicon-education"></span> GEU<span class="badge pull-right badge-l">3</span></a></li>
+                <li role="presentation"><a href="#"><span class="glyphicon glyphicon-education"></span>Acadview<span class="badge pull-right badge-l">5</span></a></li>
                 <li role="presentation"><a href="#">Other Groups</a></li>
                 <p class="list-heading list-heading">Apps</p>
-                <li role="presentation"><a href="#">Candy Crush</a></li>
-                <li role="presentation"><a href="#">Clash of Clans</a></li>
+                <li role="presentation"><a href="#"><span class="glyphicon glyphicon-king"></span> Chess<span class="badge pull-right badge-l">17</span></a></li>
+                <li role="presentation"><a href="#"><span class="glyphicon glyphicon-cutlery"></span> Cooker<span class="badge pull-right badge-l">1</span></a></li>
             </ul>
         </div></section>
         <section class="col-md-7"><div class="post-section">
             <div class="panel panel-default">
                 <div class="panel-heading">
+                  <img class=" img-circle dp-panel" src="https://tse3.mm.bing.net/th?id=OIP.v3bR39Lqt_d9xSDIPV1OpgD6D6&pid=15.1&P=0&w=300&h=300" alt="img">
                     <h3 class="panel-title">
-                        <a href="#">Bhartendu Bhandari</a>
+                        <a href="#"><b class="post-name">Bhartendu Bhandari</b></a><span class="post-time text-muted">5 mins</span>
                     </h3>
                 </div>
                 <div class="panel-body">
@@ -77,6 +83,7 @@
                             </h3>
                         </div>
                     </div>
+                    <hr>
                     <div>
                      <span>
                         <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true">
@@ -88,31 +95,54 @@
                             </span>
                                 Comment
                          </span>
+                         <span>
+                             <span class="glyphicon glyphicon-share" aria-hidden="true">
+                             </span>
+                                 Share
+                          </span>
                     </div>
                 </div>
                 <div class="panel-footer">
                     <div class="media">
                         <div class="media-left media-middle">
                             <a href="#">
-                                <img class="media-object img-circle" src="http://via.placeholder.com/32x32" alt="img">
+                                <img class="media-object img-circle dp-comment" src="https://tse3.mm.bing.net/th?id=OIP.1E3oni5b1hfyGQWJ0GE8qAEsDh&pid=15.1&P=0&w=217&h=164" alt="img">
                             </a>
                         </div>
                         <div class="media-body">
                             <span><a href="">
-                                <b>Yashvardhan Rautela</b>
+                                <b>Roufus Chan</b>
                             </a></span>
                             <span>LOL too funnny</span>
                             <div class="comments-toolkit">
                                 <span><a href="#">Like </a></span>
                                 <span><a href="#">Reply </a></span>
-                                <span class="text-muted">20 mins</span>
+                                <span class="text-muted">2 mins</span>
                             </div>
                         </div>
                     </div>
                     <div class="media">
                         <div class="media-left media-middle">
                             <a href="#">
-                                <img class="media-object img-circle" src="http://via.placeholder.com/32x32" alt="img">
+                                <img class="media-object img-circle dp-comment" src="https://tse1.mm.bing.net/th?id=OIP.70ywalWO3aIW6zrUwvBoXQDvEs&pid=15.1&P=0&w=300&h=300" alt="img">
+                            </a>
+                        </div>
+                        <div class="media-body">
+                            <span><a href="">
+                                <b>Sena Sharma</b>
+                            </a></span>
+                            <span>:-D</span>
+                            <div class="comments-toolkit">
+                                <span><a href="#">Like </a></span>
+                                <span><a href="#">Reply </a></span>
+                                <span class="text-muted">4 mins</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="media">
+                        <div class="media-left media-middle">
+                            <a href="#">
+                                <img class="media-object img-circle dp-comment" src="https://scontent.fdel1-1.fna.fbcdn.net/v/t1.0-1/p160x160/17554486_1774548832579165_8945212521538377043_n.jpg?oh=95537bcae6f6e3bcf1c19228dacc033d&oe=5A3BAB21" alt="img">
                             </a>
                         </div>
                         <div class="media-body">
@@ -123,14 +153,17 @@
             </div>
             <div class="panel panel-default">
                 <div class="panel-heading">
+                  <img class=" img-circle dp-panel" src="https://tse1.mm.bing.net/th?id=OIP.szMEu2K53KCXu8uFFno1WQEhEs&pid=15.1&P=0&w=300&h=300" alt="img">
                     <h3 class="panel-title">
-                        <a href="#">Bipin Rautela</a>
+                    <h3 class="panel-title">
+                        <a href="#"><b class="post-name">Bipin Rautela</b></a><span class="post-time text-muted">14 mins</span>
                     </h3>
                 </div>
                 <div class="panel-body">
                     <div class="img-post">
                         <img src="http://www.folomojo.com/wp-content/uploads/2015/02/16/104.jpg" class="img-responsive" alt="Responsive image">
                     </div>
+                    <hr>
                     <div>
                      <span>
                         <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true">
@@ -142,16 +175,71 @@
                             </span>
                                 Comment
                          </span>
+                         <span>
+                             <span class="glyphicon glyphicon-share" aria-hidden="true">
+                             </span>
+                                 Share
+                          </span>
                     </div>
                 </div>
-                <div class="panel-footer">Panel footer</div>
+                <div class="panel-footer">
+                  <div class="media">
+                      <div class="media-left media-middle">
+                          <a href="#">
+                              <img class="media-object img-circle dp-comment" src="https://tse2.mm.bing.net/th?id=OIP.TlimASDAEN6SIKRdMYdfNgEsEs&pid=15.1&P=0&w=300&h=300" alt="img">
+                          </a>
+                      </div>
+                      <div class="media-body">
+                          <span><a href="">
+                              <b>Shaurya Rawat</b>
+                          </a></span>
+                          <span>WOW</span>
+                          <div class="comments-toolkit">
+                              <span><a href="#">Like </a></span>
+                              <span><a href="#">Reply </a></span>
+                              <span class="text-muted">10 mins</span>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="media">
+                      <div class="media-left media-middle">
+                          <a href="#">
+                              <img class="media-object img-circle dp-comment" src="https://tse3.mm.bing.net/th?id=OIP.v3bR39Lqt_d9xSDIPV1OpgD6D6&pid=15.1&P=0&w=300&h=300" alt="img">
+                          </a>
+                      </div>
+                      <div class="media-body">
+                          <span><a href="">
+                              <b>Bhartendu Bhandari</b>
+                          </a></span>
+                          <span>:-O</span>
+                          <div class="comments-toolkit">
+                              <span><a href="#">Like </a></span>
+                              <span><a href="#">Reply </a></span>
+                              <span class="text-muted">12 mins</span>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="media">
+                      <div class="media-left media-middle">
+                          <a href="#">
+                              <img class="media-object img-circle dp-comment" src="https://scontent.fdel1-1.fna.fbcdn.net/v/t1.0-1/p160x160/17554486_1774548832579165_8945212521538377043_n.jpg?oh=95537bcae6f6e3bcf1c19228dacc033d&oe=5A3BAB21" alt="img">
+                          </a>
+                      </div>
+                      <div class="media-body">
+                          <input type="text" class="comment-box" placeholder="Write a comment...">
+                      </div>
+                  </div>
+                </div>
             </div>
             <div class="panel panel-default">
                 <div class="panel-heading">
+                  <img class=" img-circle dp-panel" src="https://tse2.mm.bing.net/th?id=OIP.TlimASDAEN6SIKRdMYdfNgEsEs&pid=15.1&P=0&w=300&h=300" alt="img">
                     <h3 class="panel-title">
-                        <a href="#">Khatam Singh</a>
+                    <h3 class="panel-title">
+                        <a href="#"><b class="post-name">Shaurya Rawat</b></a><span class="post-time text-muted">25 mins</span>
                     </h3>
                 </div>
+                  <hr>
                 <div class="panel-body">
                     <div>
                      <span>
@@ -164,27 +252,203 @@
                             </span>
                                 Comment
                          </span>
+                         <span>
+                             <span class="glyphicon glyphicon-share" aria-hidden="true">
+                             </span>
+                                 Share
+                          </span>
                     </div>
                 </div>
-                <div class="panel-footer">Panel footer</div>
+                <div class="panel-footer">
+                  <div class="media">
+                      <div class="media-left media-middle">
+                          <a href="#">
+                              <img class="media-object img-circle dp-comment" src="https://tse1.mm.bing.net/th?id=OIP.szMEu2K53KCXu8uFFno1WQEhEs&pid=15.1&P=0&w=300&h=300" alt="img">
+                          </a>
+                      </div>
+                      <div class="media-body">
+                          <span><a href="">
+                              <b>Bipin Rautela</b>
+                          </a></span>
+                          <span>Cool</span>
+                          <div class="comments-toolkit">
+                              <span><a href="#">Like </a></span>
+                              <span><a href="#">Reply </a></span>
+                              <span class="text-muted">20 mins</span>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="media">
+                      <div class="media-left media-middle">
+                          <a href="#">
+                              <img class="media-object img-circle dp-comment" src="https://scontent.fdel1-1.fna.fbcdn.net/v/t1.0-1/p160x160/17554486_1774548832579165_8945212521538377043_n.jpg?oh=95537bcae6f6e3bcf1c19228dacc033d&oe=5A3BAB21" alt="img">
+                          </a>
+                      </div>
+                      <div class="media-body">
+                          <span><a href="">
+                              <b>Yashvardhan Rautela</b>
+                          </a></span>
+                          <span>O!</span>
+                          <div class="comments-toolkit">
+                              <span><a href="#">Like </a></span>
+                              <span><a href="#">Reply </a></span>
+                              <span class="text-muted">20 mins</span>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="media">
+                      <div class="media-left media-middle">
+                          <a href="#">
+                              <img class="media-object img-circle dp-comment" src="https://scontent.fdel1-1.fna.fbcdn.net/v/t1.0-1/p160x160/17554486_1774548832579165_8945212521538377043_n.jpg?oh=95537bcae6f6e3bcf1c19228dacc033d&oe=5A3BAB21" alt="img">
+                          </a>
+                      </div>
+                      <div class="media-body">
+                          <input type="text" class="comment-box" placeholder="Write a comment...">
+                      </div>
+                  </div>
+                </div>
             </div>
         </div></section>
         <section class="col-md-3">
           <div class="ads">
-          <div>
 
-            <!-- Nav tabs -->
+            <div class="panel panel-default box-margin">
+                <div class="panel-heading background-color">
+                   <div class="media-left">
+                     <b class="title">Profiles</b>
+                   </div>
+                  <div class="panel-body">
+                    <div class="media-left border">
+                        <a href="#" data-toggle="tooltip">
+                            <img class="media-object profile img-circle" src="https://www.facebook.com/search/async/profile_picture/?fbid=100000248076763&width=72&height=72"alt="Person">
+                        </a><p class="p">Pravar</p>
+                    </div>
+                    <div class="media-left border">
+                        <a href="#" data-toggle="tooltip">
+                            <img class="media-object profile img-circle" src="https://tse4.mm.bing.net/th?id=OIP.qoIqwARwX8qOLHMj7afr8QDIDI&pid=15.1&P=0&w=300&h=300"alt="Person">
+                        </a><p class="p">Ajay</p>
+                    </div>
+                    <div class="media-left border">
+                        <a href="#" data-toggle="tooltip">
+                            <img class="media-object profile img-circle" src="https://tse2.mm.bing.net/th?id=OIP.RRAzzSUyHBU80hgqL22GmwEsDp&pid=15.1&P=0&w=203&h=159"alt="Person">
+                        </a><p class="p">Rimi</p>
+                    </div>
+                  </div>
+                </div>
+             </div>
+             <div class="panel panel-default padding-top box-margin">
+                <div class="panel-body">
+                   <div class="media-left">
+                       <a href="https://www.facebook.com/events/birthdays/"><i class="fa fa-gift" aria-hidden="true"></i><b class="birth">Birthdays</b></a>
+                   </div>
+                </div>
+              </div>
+
+          <div class="bgclr">
+
+
             <ul class="nav nav-tabs" role="tablist">
                 <li role="presentation" class="active"><a href="#top" aria-controls="home" role="tab" data-toggle="tab">Top Trends</a></li>
                 <li role="presentation"><a href="#politics" aria-controls="profile" role="tab" data-toggle="tab">Politics</a></li>
                 <li role="presentation"><a href="#sports" aria-controls="messages" role="tab" data-toggle="tab">Sports</a></li>
             </ul>
 
-            <!-- Tab panes -->
             <div class="tab-content">
-              <div role="tabpanel" class="tab-pane active" id="top">...</div>
-              <div role="tabpanel" class="tab-pane" id="politics">...</div>
-              <div role="tabpanel" class="tab-pane" id="sports">...</div>
+              <div role="tabpanel" class="tab-pane active" id="top">
+                <div><div class="media-left">
+                          <i class="fa fa-line-chart text-muted" aria-hidden="true"></i>
+                  </div>
+                  <div class="media-body">
+                      <span><a href="https://timesofindia.indiatimes.com/viral-news/pilots-skillfully-manage-to-land-an-emirates-a380-as-it-sways-violently-from-side-to-side-in-crosswinds/articleshow/60993940.cms">
+                          <b>Pilots showed their skills</b></a>
+                      </span>
+                          <p class="list-group-item-text">Pilots skilfully manage to land an Emirates A380 as it sways violently from side to side in crosswinds</p><span style="color: darkgrey;">‑ timesofindia.indiatimes.com</span></p>
+                  </div></div>
+                  <div><div class="media-left">
+                          <i class="fa fa-line-chart text-muted" aria-hidden="true"></i>
+                  </div>
+                  <div class="media-body">
+                      <span><a href="https://timesofindia.indiatimes.com/world/rest-of-world/earthquake-hits-north-korea-near-nuclear-test-site/articleshow/61061873.cms">
+                          <b>North Korea</b></a>
+                      </span>
+                          <p class="list-group-item-text">Earthquake hits North Korea near nuclear test site</p><span style="color: darkgrey;">‑ timesofindia.indiatimes.com</span></p>
+                  </div></div>
+                  <div><div class="media-left">
+                          <i class="fa fa-line-chart text-muted" aria-hidden="true"></i>
+                  </div>
+                  <div class="media-body">
+                      <span><a href="https://timesofindia.indiatimes.com/viral-news/twitter-flooded-with-memes-on-ranveers-khilji-look-kejriwal-becomes-special-target/articleshow/60922615.cms">
+                          <b>#Ranveer_Alauddin_Khilji trending</b></a>
+                      </span>
+                          <p class="list-group-item-text">Twitter flooded with memes on Ranveer's Khilji look, Kejriwal becomes special target</p><span style="color: darkgrey;">‑ timesofindia.indiatimes.com</span></p>
+                  </div></div>
+                  <div><div class="media-left">
+                          <i class="fa fa-line-chart text-muted" aria-hidden="true"></i>
+                  </div>
+                  <div class="media-body">
+                      <span><a href="https://timesofindia.indiatimes.com/india/pakistan-violates-ceasefire-for-2nd-consecutive-day-along-loc-in-jk/articleshow/61063348.cms">
+                          <b>Ceasefire Violation</b></a>
+                      </span>
+                          <p class="list-group-item-text">Pakistan violates ceasefire for 2nd consecutive day along LoC in J&K</p><span style="color: darkgrey;">‑ timesofindia.indiatimes.com</span></p>
+                  </div></div></div>
+                <div id="politics" class="tab-pane fade">
+                  <div><div class="media-left">
+                          <i class="fa fa-university text-muted" aria-hidden="true"></i>
+                  </div>
+                  <div class="media-body">
+                      <span><a href="https://timesofindia.indiatimes.com/india/why-election-commission-didnt-announce-gujarat-assembly-poll-dates/articleshow/61064735.cms">
+                          <b>EC decide to delay announcing the dates for assembly elections in Gujarat</b></a>
+                      </span>
+                          <p class="list-group-item-text">Why Election Commission didn't announce Gujarat Assembly poll dates</p><span style="color: darkgrey;">‑ timesofindia.indiatimes.com</span></p>
+                  </div></div>
+                  <div><div class="media-left">
+                          <i class="fa fa-university text-muted" aria-hidden="true"></i>
+                  </div>
+                  <div class="media-body">
+                      <span><a href="https://timesofindia.indiatimes.com/world/rest-of-world/as-donald-trump-threatens-north-korea-is-us-practising-for-war/articleshow/61065915.cms">
+                          <b>US vs North Korea</b></a>
+                      </span>
+                          <p class="list-group-item-text">As Donald Trump threatens North Korea, is US practising for war?</p><span style="color: darkgrey;">‑ timesofindia.indiatimes.com</span></p>
+                  </div></div>
+                  <div><div class="media-left">
+                          <i class="fa fa-university text-muted" aria-hidden="true"></i>
+                  </div>
+                  <div class="media-body">
+                      <span><a href="https://timesofindia.indiatimes.com/city/patna/pm-modi-to-visit-bihar-tomorrow-to-attend-patna-university-function/articleshow/61068248.cms">
+                          <b>PM visit Bihar tomorrow</b></a>
+                      </span>
+                          <p class="list-group-item-text">PM Modi to visit Bihar tomorrow to attend Patna University function</p><span style="color: darkgrey;">‑ timesofindia.indiatimes.com</span></p>
+                  </div></div></div>
+                <div id="sports" class="tab-pane fade">
+                  <div><div class="media-left">
+                          <i class="fa fa-futbol-o text-muted" aria-hidden="true"></i>
+                  </div>
+                  <div class="media-body">
+                      <span><a href="https://timesofindia.indiatimes.com/sports/cricket/australia-in-india/there-is-no-going-back-on-retirements-says-nehra/articleshow/61055602.cms">
+                          <b>Nehraji going to retire</b></a>
+                      </span>
+                          <p class="list-group-item-text">There is no going back on retirements, says Nehra</p><span style="color: darkgrey;">‑ timesofindia.indiatimes.com</span></p>
+                  </div></div>
+                  <div><div class="media-left">
+                          <i class="fa fa-futbol-o text-muted" aria-hidden="true"></i>
+                  </div>
+                  <div class="media-body">
+                      <span><a href="https://timesofindia.indiatimes.com/sports/hockey/top-stories/confident-india-aim-to-retain-no-1-status-in-asian-hockey/articleshow/61018818.cms">
+                          <b>Hockey India</b></a>
+                      </span>
+                          <p class="list-group-item-text">Confident India aim to retain No.1 status in Asian hockey</p><span style="color: darkgrey;">‑ timesofindia.indiatimes.com</span></p>
+                  </div></div>
+                  <div><div class="media-left">
+                          <i class="fa fa-futbol-o text-muted" aria-hidden="true"></i>
+                  </div>
+                  <div class="media-body">
+                      <span><a href="https://www.sportskeeda.com/football/records-broken-india-after-beating-macau-4-1-to-seal-afc-asian-cup-2019-spot">
+                          <b>Indian Football</b></a>
+                      </span>
+                          <p class="list-group-item-text">Records broken by India after beating Macau 4-1 to seal AFC Asian Cup 2019 spot</p><span style="color: darkgrey;">‑ sportskeeda.com</span></p>
+                  </div></div></div>
+              </div>
+
             </div>
 
           </div>
