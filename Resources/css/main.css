@@ -162,3 +162,15 @@ hr{
 .bgclr{
   background: white;
 }
+.lang{
+  position: relative;
+  top: 10px;
+}
+.foot{
+  position:relative;
+  left: 10px;
+}
+.loader{
+  position: relative;
+  left: 45%;
+}
